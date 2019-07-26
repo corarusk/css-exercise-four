@@ -1,56 +1,96 @@
 *, *:before, *:after {
   box-sizing: border-box;
 }
+
 body {
-  background-color: #ffffff;
-  font-size: 10px;
-  font-family: system-ui, sans-serif;
-  letter-spacing: .5em;
+  background-color: rgb(214, 214, 214);
+  font-size: 100%;
   display: block;
+  height: 100%;
+  margin: 0%;
 }
 
-h1 {
-  font-size: 1.5em;
-  text-align: center;
-  font-weight: 400;
-}
 
 .container {
   background-color: rgb(214, 214, 214);
-  margin-left: 35%;
-  margin-right: 35%;
-  padding-top: 2%;
-  border: 0%;
-  width: 30%;
-}
-
-.baku-pic, .london-pic, .madrid-pic, .rome-pic {
   width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.preview-baku {
-  position: absolute;
-  top: 12%;
-  left: 37%;
-}
-.preview-london {
-  position: absolute;
-  top: 52%;
-  left: 37%;
+
+.preview {
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  margin-bottom: 3%;
+  background-size: cover;
 }
 
-.preview-madrid {
-  position: absolute;
-  top: 90%;
-  left: 37%;
+/* Laptop */
+@media screen and (min-width: 990px) {
+    .preview {
+      float: left;
+      width: 25%;
+    }
 }
 
-.preview-rome {
-  position: absolute;
-  top: 124%;
-  left: 37%;
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .preview {
+      float: left;
+      width: 50%;
+      margin: 0%;
+    }
 }
 
-.title {
+
+
+.baku {
+  background-image: url("../images/baku.jpg");
+}
+
+.london {
+  background-image: url("../images/london.png");
+}
+
+.madrid {
+  background-image: url("../images/madrid.jpg");
+  background-size: cover;
+}
+
+.rome {
+  background-image: url("../images/rome.jpg");
+}
+
+
+h1 {
+  text-align: center;
   font-variant: small-caps;
+  font-weight: 400;
+  font-size: 1.5em;
+  padding-bottom: 8%;
+  padding-top: 8%;
+}
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    h1 {
+      font-size: 2.5em;
+    }
+}
+
+h2 {
+  align: left;
+  font-size: 1.4em;
+  padding-left: 10%;
+  padding-top: 10%;
+  font-variant: normal;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    h2 {
+      font-size: 2.5em;
+    }
 }
