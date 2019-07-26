@@ -4,10 +4,34 @@
 
 body {
   background-color: rgb(214, 214, 214);
-  font-size: 100%;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 540;
+  letter-spacing: 2px;
   display: block;
   height: 100%;
-  margin: 0%;
+  width: 100%;
+}
+
+h1 span {
+  font-variant: small-caps;
+  padding: 18%;
+  font-size: 1.3em;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    h1 span {
+      width: 100%;
+      font-size: 2em;
+      padding:28%;
+    }
+}
+
+.preview {
+  padding-left: 10%;
+  padding-top: 10%;
+  font-size: 1.3em;
 }
 
 
@@ -15,8 +39,7 @@ body {
   background-color: rgb(214, 214, 214);
   width: 100%;
   height: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  min-width: 375px;
 }
 
 
@@ -28,13 +51,6 @@ body {
   background-size: cover;
 }
 
-/* Laptop */
-@media screen and (min-width: 990px) {
-    .preview {
-      float: left;
-      width: 25%;
-    }
-}
 
 /* Tablet */
 @media only screen and (min-width: 768px) {
@@ -45,11 +61,19 @@ body {
     }
 }
 
-
+/* Laptop */
+@media only screen and (min-width: 991px) {
+    .preview {
+      float: left;
+      width: 25%;
+      margin: 0%;
+    }
+}
 
 .baku {
   background-image: url("../images/baku.jpg");
 }
+
 
 .london {
   background-image: url("../images/london.png");
@@ -62,35 +86,4 @@ body {
 
 .rome {
   background-image: url("../images/rome.jpg");
-}
-
-
-h1 {
-  text-align: center;
-  font-variant: small-caps;
-  font-weight: 400;
-  font-size: 1.5em;
-  padding-bottom: 8%;
-  padding-top: 8%;
-}
-/* Tablet */
-@media only screen and (min-width: 768px) {
-    h1 {
-      font-size: 2.5em;
-    }
-}
-
-h2 {
-  align: left;
-  font-size: 1.4em;
-  padding-left: 10%;
-  padding-top: 10%;
-  font-variant: normal;
-}
-
-/* Tablet */
-@media only screen and (min-width: 768px) {
-    h2 {
-      font-size: 2.5em;
-    }
 }
