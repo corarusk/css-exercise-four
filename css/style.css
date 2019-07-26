@@ -1,4 +1,56 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 body {
-  background-color: #dadada;
+  background-color: #ffffff;
   font-size: 10px;
+  font-family: system-ui, sans-serif;
+  letter-spacing: .5em;
+  display: block;
+}
+
+h1 {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 400;
+}
+
+.container {
+  background-color: rgb(214, 214, 214);
+  margin-left: 35%;
+  margin-right: 35%;
+  padding-top: 2%;
+  border: 0%;
+  width: 30%;
+}
+
+.baku-pic, .london-pic, .madrid-pic, .rome-pic {
+  width: 100%;
+}
+
+.preview-baku {
+  position: absolute;
+  top: 12%;
+  left: 37%;
+}
+.preview-london {
+  position: absolute;
+  top: 52%;
+  left: 37%;
+}
+
+.preview-madrid {
+  position: absolute;
+  top: 90%;
+  left: 37%;
+}
+
+.preview-rome {
+  position: absolute;
+  top: 124%;
+  left: 37%;
+}
+
+.title {
+  font-variant: small-caps;
 }
