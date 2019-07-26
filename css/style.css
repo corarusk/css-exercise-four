@@ -2,6 +2,17 @@
   box-sizing: border-box;
 }
 
+
+.container {
+  background-color: rgb(214, 214, 214);
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  min-width: 375px;
+}
+
 body {
   background-color: rgb(214, 214, 214);
   font-size: 16px;
@@ -11,11 +22,11 @@ body {
   display: block;
   height: 100%;
   width: 100%;
+  text-align: center;
 }
 
 h1 span {
   font-variant: small-caps;
-  padding: 18%;
   font-size: 1.3em;
 }
 
@@ -24,31 +35,19 @@ h1 span {
     h1 span {
       width: 100%;
       font-size: 2em;
-      padding:28%;
+      text-align: center;
     }
 }
 
 .preview {
-  padding-left: 10%;
-  padding-top: 10%;
-  font-size: 1.3em;
-}
-
-
-.container {
-  background-color: rgb(214, 214, 214);
   width: 100%;
-  height: 100%;
-  min-width: 375px;
-}
-
-
-.preview {
-  width: 100%;
+  margin-bottom: 5%;
   height: 300px;
   background-repeat: no-repeat;
-  margin-bottom: 3%;
   background-size: cover;
+  padding-left: 5%;
+  padding-top: 5%;
+  text-align: left;
 }
 
 
@@ -56,8 +55,20 @@ h1 span {
 @media only screen and (min-width: 768px) {
     .preview {
       float: left;
-      width: 50%;
-      margin: 0%;
+      width: 38%;
+      margin: 1%;
+      height: 175px;
+      padding-left: 1%;
+      padding-top: 1%;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .baku, .madrid {
+      float: left;
+      width: 38%;
+      margin-left: 12%;
     }
 }
 
@@ -65,8 +76,17 @@ h1 span {
 @media only screen and (min-width: 991px) {
     .preview {
       float: left;
-      width: 25%;
-      margin: 0%;
+      width: 20%;
+      margin: 1%;
+    }
+}
+
+/* Laptop */
+@media only screen and (min-width: 991px) {
+    .baku {
+      float: left;
+      width: 20%;
+      margin-left: 6%;
     }
 }
 
